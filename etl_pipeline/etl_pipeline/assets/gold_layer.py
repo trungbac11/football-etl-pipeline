@@ -1,6 +1,39 @@
 from dagster import asset, Output, AssetIn
 import pandas as pd
 
+
+@asset(
+    io_manager_key="minio_io_manager",
+    ins={
+        "silver_teamsOnSeason": AssetIn(
+            key_prefix=["football", "silver"]
+        )
+    },
+    key_prefix=["football", "gold"],
+    compute_kind="Pandas"
+)
+def gold_teamsOnSeason(silver_teamsOnSeason: pd.DataFrame) -> Output[pd.DataFrame]:
+    st = silver_teamsOnSeason.copy()
+
+    def tb(group):
+        wins = (group['homeGoals'] > group['awayGoals']).sum()
+        draws = (group['homeGoals'] == group['awayGoals']).sum()
+        loses = (group['homeGoals'] < group['awayGoals']).sum()
+        total_goals = group['homeGoals'].sum()
+        points = wins * 3 + draws
+        return pd.Series({'match': len(group), 'win': wins, 'draw': draws, 'lose': loses, 'goals': total_goals, 'point': points})
+
+    team_on_season = st.groupby(['name', 'league', 'season']).apply(tb).reset_index()
+    
+    return Output(
+       team_on_season,
+        metadata={
+            'table': 'teamsOnSeason',
+            'records': len(team_on_season)
+        }
+    )
+    
+    
 @asset(
     io_manager_key="minio_io_manager",
     ins={

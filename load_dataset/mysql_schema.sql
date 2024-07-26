@@ -72,7 +72,7 @@ CREATE TABLE teamstats (
   gameID int, 
   teamID int, 
   season int4, 
-  date varchar(32), 
+  date datetime, 
   location varchar(32), 
   goals int4, 
   xGoals float4, 

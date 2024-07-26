@@ -47,3 +47,16 @@ CREATE TABLE analysis.statsPlayerPer90(
     scorers int,
     PRIMARY KEY (playerID, name)
 );
+
+DROP TABLE IF EXISTS analysis.teamsOnSeason CASCADE;
+CREATE TABLE analysis.teamsOnSeason(
+    team varchar(32),
+    league int,
+    season int,
+    win int,
+    draw int,
+    lose int,
+    goals int,
+    point int,
+    PRIMARY KEY (team)
+);
