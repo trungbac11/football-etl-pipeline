@@ -50,7 +50,7 @@ CREATE TABLE analysis.statsPlayerPer90(
 
 DROP TABLE IF EXISTS analysis.teamsOnSeason CASCADE;
 CREATE TABLE analysis.teamsOnSeason(
-    team varchar(32),
+    name varchar(32),
     league int,
     season int,
     win int,

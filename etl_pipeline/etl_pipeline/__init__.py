@@ -28,18 +28,25 @@ PSQL_CONFIG = {
     "user": os.getenv("POSTGRES_USER"),
     "password": os.getenv("POSTGRES_PASSWORD")
 }
-ls_asset=[asset_factory(table) for table in tables] + [silver_statsTeamOnGames, 
-                                                       silver_teamsOnSeason,
-                                                       silver_shotGames,
-                                                       silver_playerAppearances,
-                                                       gold_statsPerLeagueSeason,
-                                                       gold_statsPerPlayerSeason, 
-                                                       gold_statsPlayerPer90,
-                                                       gold_teamsOnSeason,
-                                                       statsPerLeagueSeason,
-                                                       statsPerPlayerSeason,
-                                                       statsPlayerPer90,
-                                                       teamsOnSeason]
+ls_asset=[  bronze_appearances,
+            bronze_games,
+            bronze_leagues,
+            bronze_players,
+            bronze_shots,
+            bronze_teams,
+            bronze_teamstats,     
+            silver_statsTeamOnGames, 
+            silver_teamsOnSeason,
+            silver_shotGames,
+            silver_playerAppearances,
+            gold_statsPerLeagueSeason,
+            gold_statsPerPlayerSeason, 
+            gold_statsPlayerPer90,
+            gold_teamsOnSeason,
+            statsPerLeagueSeason,
+            statsPerPlayerSeason,
+            statsPlayerPer90,
+            teamsOnSeason               ]
 
 defs = Definitions(
     assets=ls_asset,

@@ -5,23 +5,23 @@ import pandas as pd
     io_manager_key='minio_io_manager',
     required_resource_keys={'minio_io_manager'},
     ins={
-        'teamstats': AssetIn(
+        'bronze_teamstats': AssetIn(
             key_prefix=['football', 'bronze']
         ),
-        'games': AssetIn(
+        'bronze_games': AssetIn(
             key_prefix=['football', 'bronze']
         ),
-        'leagues': AssetIn(
+        'bronze_leagues': AssetIn(
             key_prefix=['football', 'bronze']
         )
     },
     key_prefix=['football', 'silver'],
     compute_kind='Pandas'
 )
-def silver_statsTeamOnGames(teamstats: pd.DataFrame, games: pd.DataFrame, leagues: pd.DataFrame) -> Output[pd.DataFrame]:
-    tst = teamstats.copy()
-    ga = games.copy()
-    lg = leagues.copy()
+def silver_statsTeamOnGames(bronze_teamstats: pd.DataFrame, bronze_games: pd.DataFrame, bronze_leagues: pd.DataFrame) -> Output[pd.DataFrame]:
+    tst = bronze_teamstats.copy()
+    ga = bronze_games.copy()
+    lg = bronze_leagues.copy()
 
     #drop unsusable columns 
     ga.drop(columns=ga.columns.to_list()[13:], inplace=True)
@@ -44,23 +44,23 @@ def silver_statsTeamOnGames(teamstats: pd.DataFrame, games: pd.DataFrame, league
     io_manager_key='minio_io_manager',
     required_resource_keys={'minio_io_manager'},
     ins={
-        'appearances': AssetIn(
+        'bronze_appearances': AssetIn(
             key_prefix=['football', 'bronze']
         ),
-        'games': AssetIn(
+        'bronze_games': AssetIn(
             key_prefix=['football', 'bronze']
         ),
-        'players': AssetIn(
+        'bronze_players': AssetIn(
             key_prefix=['football', 'bronze']
         )
     },
     key_prefix=['football', 'silver'],
     compute_kind='Pandas'
 )
-def silver_playerAppearances(appearances: pd.DataFrame, games: pd.DataFrame, players: pd.DataFrame) -> Output[pd.DataFrame]:
-    ap = appearances.copy()
-    ge = games.copy()
-    pl = players.copy()
+def silver_playerAppearances(bronze_appearances: pd.DataFrame, bronze_games: pd.DataFrame, bronze_players: pd.DataFrame) -> Output[pd.DataFrame]:
+    ap = bronze_appearances.copy()
+    ge = bronze_games.copy()
+    pl = bronze_players.copy()
 
     #drop unusable column
     ge.drop(columns=ge.columns.to_list()[13:], inplace=True)
@@ -84,20 +84,20 @@ def silver_playerAppearances(appearances: pd.DataFrame, games: pd.DataFrame, pla
     io_manager_key='minio_io_manager',
     required_resource_keys={'minio_io_manager'},
     ins={
-        'teams': AssetIn(
+        'bronze_teams': AssetIn(
             key_prefix=['football', 'bronze']
         ),
-        'games': AssetIn(
+        'bronze_games': AssetIn(
             key_prefix=['football', 'bronze']
         )
     },
     key_prefix=['football', 'silver'],
     compute_kind='Pandas'
 )
-def silver_teamsOnSeason(teams: pd.DataFrame, games: pd.DataFrame, leagues: pd.DataFrame) -> Output[pd.DataFrame]:
-    tm = teams.copy()
-    gm = games.copy()
-    le = leagues.copy()
+def silver_teamsOnSeason(bronze_teams: pd.DataFrame, bronze_games: pd.DataFrame, bronze_leagues: pd.DataFrame) -> Output[pd.DataFrame]:
+    tm = bronze_teams.copy()
+    gm = bronze_games.copy()
+    le = bronze_leagues.copy()
     #drop 
     gm.drop(columns=gm.columns.to_list()[8:], inplace=True)
     
@@ -118,23 +118,23 @@ def silver_teamsOnSeason(teams: pd.DataFrame, games: pd.DataFrame, leagues: pd.D
     io_manager_key='minio_io_manager',
     required_resource_keys={'minio_io_manager'},
     ins={
-        'shots': AssetIn(
+        'bronze_shots': AssetIn(
             key_prefix=['football', 'bronze']
         ),
-        'games': AssetIn(
+        'bronze_games': AssetIn(
             key_prefix=['football', 'bronze']
         ),
-        'players': AssetIn(
+        'bronze_players': AssetIn(
             key_prefix=['football', 'bronze']
         )
     },
     key_prefix=['football', 'silver'],
     compute_kind='Pandas'
 )
-def silver_shotGames(shots: pd.DataFrame, games: pd.DataFrame, players: pd.DataFrame) -> Output[pd.DataFrame]:
-    sh = shots.copy()
-    gam = games.copy()
-    ply = players.copy()
+def silver_shotGames(bronze_shots: pd.DataFrame, bronze_games: pd.DataFrame, bronze_players: pd.DataFrame) -> Output[pd.DataFrame]:
+    sh = bronze_shots.copy()
+    gam = bronze_games.copy()
+    ply = bronze_players.copy()
     
     #drop unusable column
     gam.drop(columns=gam.columns.to_list()[13:], inplace=True)
