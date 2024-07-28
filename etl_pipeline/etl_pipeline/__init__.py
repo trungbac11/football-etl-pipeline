@@ -1,8 +1,8 @@
 import os
 from dagster import Definitions
+from .assets.bronze_layer import *
 from .assets.silver_layer import *
 from .assets.gold_layer import *
-from .assets.bronze_layer import *
 from .assets.warehouse_layer import *
 from .resources.minio_io_manager import MinIOIOManager
 from .resources.mysql_io_manager import MySQLIOManager
@@ -35,18 +35,16 @@ ls_asset=[  bronze_appearances,
             bronze_shots,
             bronze_teams,
             bronze_teamstats,     
-            silver_statsTeamOnGames, 
-            silver_teamsOnSeason,
-            silver_shotGames,
-            silver_playerAppearances,
-            gold_statsPerLeagueSeason,
-            gold_statsPerPlayerSeason, 
-            gold_statsPlayerPer90,
-            gold_teamsOnSeason,
-            statsPerLeagueSeason,
-            statsPerPlayerSeason,
-            statsPlayerPer90,
-            teamsOnSeason               ]
+            silver_teamingames, 
+            silver_teamseason,
+            silver_shotgames,
+            silver_playerappearances,
+            gold_leagueseason,
+            gold_playerseason, 
+            gold_teamseason,
+            leagueseason,
+            playerseason,
+            teamseason               ]
 
 defs = Definitions(
     assets=ls_asset,

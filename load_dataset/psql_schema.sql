@@ -1,8 +1,8 @@
 CREATE SCHEMA IF NOT EXISTS analysis;
 
 
-DROP TABLE IF EXISTS analysis.statsPerLeagueSeason CASCADE;
-CREATE TABLE analysis.statsPerLeagueSeason(
+DROP TABLE IF EXISTS analysis.leagueseason CASCADE;
+CREATE TABLE analysis.leagueseason(
     name varchar(32),
     season int,
     goals int,
@@ -14,14 +14,13 @@ CREATE TABLE analysis.statsPerLeagueSeason(
     redCards int,
     corners int,
     games int,
-    goalPerGame float,
-    PRIMARY KEY (name, season)
+    goalPerGame float
 );
-DROP TABLE IF EXISTS analysis.statsPerPlayerSeason CASCADE;
-CREATE TABLE analysis.statsPerPlayerSeason(
+DROP TABLE IF EXISTS analysis.playerseason CASCADE;
+CREATE TABLE analysis.playerseason(
     playerID int,
     name varchar(32),
-    season varchar(32),
+    season int,
     goals int,
     shots int,
     xGoals float,
@@ -29,27 +28,11 @@ CREATE TABLE analysis.statsPerPlayerSeason(
     xGoalsBuildup float,
     assists int,
     keyPasses int,
-    xAssists float,
-    gDiff float,
-    gDiffRatio float,
-    PRIMARY KEY (playerID, season)
+    xAssists float
 );
 
-DROP TABLE IF EXISTS analysis.statsPlayerPer90 CASCADE;
-CREATE TABLE analysis.statsPlayerPer90(
-    playerID int,
-    name varchar(32),
-    total_goals int,
-    total_assists int,
-    total_time int,
-    goalsPer90 float,
-    assistsPer90 float,
-    scorers int,
-    PRIMARY KEY (playerID, name)
-);
-
-DROP TABLE IF EXISTS analysis.teamsOnSeason CASCADE;
-CREATE TABLE analysis.teamsOnSeason(
+DROP TABLE IF EXISTS analysis.teamseason CASCADE;
+CREATE TABLE analysis.teamseason(
     name varchar(32),
     league int,
     season int,
@@ -57,6 +40,6 @@ CREATE TABLE analysis.teamsOnSeason(
     draw int,
     lose int,
     goals int,
-    point int,
-    PRIMARY KEY (team)
+    goals_difference int,
+    point int
 );

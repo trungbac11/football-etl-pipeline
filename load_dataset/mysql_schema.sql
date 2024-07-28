@@ -28,7 +28,7 @@ DROP TABLE IF EXISTS games;
 CREATE TABLE games (
   gameID int NOT NULL, 
   leagueID int NOT NULL,
-  season varchar(32), 
+  season int, 
   date timestamp, 
   homeTeamID int NOT NULL, 
   awayTeamID int NOT NULL, 
