@@ -47,6 +47,7 @@ docker cp football/ de_mysql:/tmp/
 make to_mysql_root
 
 SHOW GLOBAL VARIABLES LIKE 'LOCAL_INFILE';
+
 SET GLOBAL LOCAL_INFILE=TRUE;
 
 exit
