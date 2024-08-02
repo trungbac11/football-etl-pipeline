@@ -28,8 +28,9 @@ The primary objective of this project is to build an ETL pipeline that extracts 
 
 ### 3.5 Data lineage
 ## 4. Setup
-
-If using Windows, set up WSL2 and a local Ubuntu virtual machine, then install the above software for Ubuntu.
+- Docker desktop
+- Dbeaver or any other DB client
+- If using Windows, install Linux on Windows with WSL
 
 
 ### 4.1 Git clone
