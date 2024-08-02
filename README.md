@@ -29,46 +29,50 @@ The primary objective of this project is to build an ETL pipeline that extracts 
 ### 3.5 Data lineage
 ## 4. Setup
 
+If using Windows, set up WSL2 and a local Ubuntu virtual machine, then install the above software for Ubuntu.
+
 
 ### 4.1 Git clone
+Clone the repository:
+```git clone https://github.com/trungbac11/football-etl-pipeline.git```
 
 ### 4.2 Setup local
 
 **#create docker**
 
-make build
+`make build`
 
-make up
+`make up`
 
 ### 4.3 Import data into MySQL
 
 **#copy data from local to docker**
 
-docker cp football/ de_mysql:/tmp/
+`docker cp football/ de_mysql:/tmp/`
 
 **#enable access**
 
-make to_mysql_root
+`make to_mysql_root`
 
-SHOW GLOBAL VARIABLES LIKE 'LOCAL_INFILE';
+`SHOW GLOBAL VARIABLES LIKE 'LOCAL_INFILE';`
 
-SET GLOBAL LOCAL_INFILE=TRUE;
+`SET GLOBAL LOCAL_INFILE=TRUE;`
 
-exit
+`exit`
 
 **#create tables with schema**
 
-make mysql_create
+`make mysql_create`
 
 **#load csv into created tables**
 
-make mysql_load
+`make mysql_load`
 
 ### 4.4 Create schema in PostgresSQL
 
 **#create tables with schema**
 
-make psql_create
+`make psql_create`
 
 ## 5. Demo
 
