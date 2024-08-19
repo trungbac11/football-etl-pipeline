@@ -36,6 +36,7 @@ CREATE TABLE analysis.teamseason(
     name varchar(32),
     league int,
     season int,
+    date timestamp,
     win int,
     draw int,
     lose int,

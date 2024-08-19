@@ -24,7 +24,7 @@ def gold_teamseason(silver_teamseason: pd.DataFrame) -> Output[pd.DataFrame]:
         points = wins * 3 + draws
         return pd.Series({'match': len(group), 'win': wins, 'draw': draws, 'lose': loses, 'goals': total_goals, 'goals_difference': minus_goals, 'point': points})
 
-    team_on_season = st.groupby(['name', 'league', 'season']).apply(playerseason).reset_index()
+    team_on_season = st.groupby(['name', 'league', 'season','date']).apply(playerseason).reset_index()
     
     return Output(
        team_on_season,

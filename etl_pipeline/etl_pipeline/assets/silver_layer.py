@@ -101,7 +101,10 @@ def silver_teamseason(bronze_teams: pd.DataFrame, bronze_games: pd.DataFrame, br
     #drop 
     gm.drop(columns=gm.columns.to_list()[8:], inplace=True)
     
-    team_on_seasons = pd.merge(gm, tm, left_on="homeTeamID", right_on="teamID", how="left")
+    home_games = pd.merge(gm, tm, left_on="homeTeamID", right_on="teamID", how="left")
+    away_games = pd.merge(gm, tm, left_on="awayTeamID", right_on="teamID", how="left")
+
+    team_on_seasons = pd.concat([home_games, away_games], ignore_index=True)
     team_on_seasons = pd.merge(team_on_seasons, le, on="leagueID", how="left")
     
     team_on_seasons.rename(columns={"name_x": "name", "name_y":"league"}, inplace=True)

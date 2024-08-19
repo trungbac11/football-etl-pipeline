@@ -57,6 +57,7 @@ def leagueseason(gold_leagueseason: pd.DataFrame) -> Output[pd.DataFrame]:
                     "name",
                     "league",
                     "season",
+                    "date",
                     "match",
                     "win",
                     "draw",
