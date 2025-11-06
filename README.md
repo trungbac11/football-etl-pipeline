@@ -1,11 +1,8 @@
 # Football Match Finder
 
-
-This project is an ETL (Extract, Transform, Load) pipeline designed to collect and process data related to top European football matches, including leagues like the English Premier League (EPL) and Serie A, La Liga,… This project culminates in a web application that allows users to search for and rank these matches.
-
-![image](https://github.com/user-attachments/assets/42cba9bf-5814-4e78-bf41-a2f0998f04c7)
-
 ## SYSTEM ARCHITECTURE
+
+<img width="2000" height="965" alt="image" src="https://github.com/user-attachments/assets/a2c58a8c-c52d-40b6-840e-2acaad43e8a0" />
 
 ## Usage
 - Docker desktop
@@ -53,18 +50,18 @@ Get clone repo: `get clone https://github.com/trungbac11/football-etl-pipeline.g
 `make psql_create`
 
 ### 5 Run ETL Pipeline with Dagster
-Dagster will be running on: 'http://localhost:3001'
+Dagster will be running on: `[http://localhost:8501](http://localhost:3001)`
 
 ### 6 Run the Football Search Web Application
 
 **#start the Streamlit app**
 
-The web application will be available at: 'http://localhost:8501'
+The web application will be available at:  `[http://localhost:8501](http://localhost:8501)`
 
-'make run_app'
+`make run_app`
 
 ### 7 Stop the Services
 
 **#stop all containers**
 
-'make down'
+`make down`
