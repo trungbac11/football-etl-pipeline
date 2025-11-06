@@ -37,7 +37,7 @@
 Get clone repo: `get clone https://github.com/trungbac11/football-etl-pipeline.git`
 ### Setup local
 
-**#create docker**
+**create docker**
 
 `make build`
 
@@ -45,11 +45,11 @@ Get clone repo: `get clone https://github.com/trungbac11/football-etl-pipeline.g
 
 ### Import data into MySQL
 
-**#copy data from local to docker**
+**copy data from local to docker**
 
 `docker cp football/ de_mysql:/tmp/`
 
-**#enable access**
+**enable access**
 
 `make to_mysql_root`
 
@@ -59,17 +59,17 @@ Get clone repo: `get clone https://github.com/trungbac11/football-etl-pipeline.g
 
 `exit`
 
-**#create tables with schema**
+**create tables with schema**
 
 `make mysql_create`
 
-**#load csv into created tables**
+**load csv into created tables**
 
 `make mysql_load`
 
 ### Create schema in PostgresSQL
 
-**#create tables with schema**
+**create tables with schema**
 
 `make psql_create`
 
@@ -78,4 +78,4 @@ Dagster will be running on: `http://localhost:3001`
 
 ### Demo
 
-**#start the Streamlit app**: `http://localhost:8501`
+**start the Streamlit app**: `http://localhost:8501`
