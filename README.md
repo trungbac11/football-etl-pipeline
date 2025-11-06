@@ -2,6 +2,25 @@
 
 <img width="2000" height="965" alt="image" src="https://github.com/user-attachments/assets/a2c58a8c-c52d-40b6-840e-2acaad43e8a0" />
 
+## Data Lineage
+
+#### Bronze layer 
+<img width="1915" height="790" alt="image" src="https://github.com/user-attachments/assets/7edfe7a8-fb2b-4bc0-97cb-42647954fb79" />
+
+#### Silver layer
+<img width="1915" height="551" alt="image" src="https://github.com/user-attachments/assets/8442540e-9754-4c29-844d-50167dabd3e2" />
+
+#### Gold layer
+<img width="1908" height="593" alt="image" src="https://github.com/user-attachments/assets/5f1e4953-1cea-4e85-9679-67c2919c3971" />
+
+#### Data Warehouse
+<img width="1914" height="789" alt="image" src="https://github.com/user-attachments/assets/1fe8a763-d679-431d-a5a6-772ce6571042" />
+
+## Demo
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a3e8a0b4-16f4-4c28-a267-1a0e44324eb8" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d75c1cec-d4ad-43b2-92d2-b21b224caf0f" />
+
 ## Usage
 - Docker desktop
 - Dbeaver or any other DB client
@@ -52,8 +71,4 @@ Dagster will be running on: `http://localhost:3001`
 
 ### Demo
 
-**#start the Streamlit app**
-
-The web application will be available at:  `http://localhost:8501`
-
-`make run_app`
+**#start the Streamlit app**: `http://localhost:8501`
