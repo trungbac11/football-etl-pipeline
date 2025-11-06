@@ -1,39 +1,20 @@
-# football-etl-pipeline
+# Football Match Finder
 
 
 This project is an ETL (Extract, Transform, Load) pipeline designed to collect and process data related to top European football matches, including leagues like the English Premier League (EPL) and Serie A, La Liga,… This project culminates in a web application that allows users to search for and rank these matches.
 
 ![image](https://github.com/user-attachments/assets/42cba9bf-5814-4e78-bf41-a2f0998f04c7)
 
+## SYSTEM ARCHITECTURE
 
-
-## 1. Objective
-Dataset is collected from [Kaggle](http://www.kaggle.com/datasets/technika148/football-database)
-
-The primary objective of this project is to build an ETL pipeline that extracts data from various sources, transforms it into a structured format, and loads it into a database. This data is then used to power a web application that provides users with search capabilities and rankings of top football matches in Europe.
-## 2. Design
-
-### 2.1 Directory tree
-
-### 2.2 Data pipeline
-
-![image](https://github.com/user-attachments/assets/f853b927-af81-4863-832c-360f96c93f20)
-
-
-### 2.3 Database schema
-
-### 2.4 Project structure
-
-### 2.5 Data lineage
-
-## 3. Setup
+## Usage
 - Docker desktop
 - Dbeaver or any other DB client
 - If using Windowns, install Linux on Windowns with WLS 
 
-### 3.1 Git clone
+### 1 Git clone
 Get clone repo: `get clone https://github.com/trungbac11/football-etl-pipeline.git`
-### 3.2 Setup local
+### 2 Setup local
 
 **#create docker**
 
@@ -41,7 +22,7 @@ Get clone repo: `get clone https://github.com/trungbac11/football-etl-pipeline.g
 
 `make up`
 
-### 3.3 Import data into MySQL
+### 3 Import data into MySQL
 
 **#copy data from local to docker**
 
@@ -65,14 +46,25 @@ Get clone repo: `get clone https://github.com/trungbac11/football-etl-pipeline.g
 
 `make mysql_load`
 
-### 3.4 Create schema in PostgresSQL
+### 4 Create schema in PostgresSQL
 
 **#create tables with schema**
 
 `make psql_create`
 
-## 4. Demo
+### 5 Run ETL Pipeline with Dagster
+Dagster will be running on: 'http://localhost:3001'
 
-## 5. Further actions
+### 6 Run the Football Search Web Application
 
-## 6. Conclusions
+**#start the Streamlit app**
+
+The web application will be available at: 'http://localhost:8501'
+
+'make run_app'
+
+### 7 Stop the Services
+
+**#stop all containers**
+
+'make down'
