@@ -52,7 +52,7 @@ Get clone repo: `get clone https://github.com/trungbac11/football-etl-pipeline.g
 ### 5 Run ETL Pipeline with Dagster
 Dagster will be running on: `http://localhost:3001`
 
-### 6 Run the Football Search Web Application
+### 6 Demo
 
 **#start the Streamlit app**
 
