@@ -9,9 +9,9 @@
 - Dbeaver or any other DB client
 - If using Windowns, install Linux on Windowns with WLS 
 
-### 1 Git clone
+### Git clone
 Get clone repo: `get clone https://github.com/trungbac11/football-etl-pipeline.git`
-### 2 Setup local
+### Setup local
 
 **#create docker**
 
@@ -19,7 +19,7 @@ Get clone repo: `get clone https://github.com/trungbac11/football-etl-pipeline.g
 
 `make up`
 
-### 3 Import data into MySQL
+### Import data into MySQL
 
 **#copy data from local to docker**
 
@@ -43,25 +43,19 @@ Get clone repo: `get clone https://github.com/trungbac11/football-etl-pipeline.g
 
 `make mysql_load`
 
-### 4 Create schema in PostgresSQL
+### Create schema in PostgresSQL
 
 **#create tables with schema**
 
 `make psql_create`
 
-### 5 Run ETL Pipeline with Dagster
+### Run ETL Pipeline with Dagster
 Dagster will be running on: `http://localhost:3001`
 
-### 6 Demo
+### Demo
 
 **#start the Streamlit app**
 
 The web application will be available at:  `http://localhost:8501`
 
 `make run_app`
-
-### 7 Stop the Services
-
-**#stop all containers**
-
-`make down`
