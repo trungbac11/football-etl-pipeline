@@ -19,12 +19,6 @@
 <img width="1914" height="789" alt="image" src="https://github.com/user-attachments/assets/1fe8a763-d679-431d-a5a6-772ce6571042" />
 
 ## Demo
-<img width="1361" height="924" alt="image" src="https://github.com/user-attachments/assets/86fefc08-9829-4956-a255-29734485894b" />
-
-<img width="1432" height="918" alt="image" src="https://github.com/user-attachments/assets/c3e8a7c1-af66-4c72-9379-e02cd413db84" />
-
-<img width="1263" height="906" alt="image" src="https://github.com/user-attachments/assets/b8e25026-4376-4d19-83e4-151cd9fca3fa" />
-
 <img width="1920" height="1920" alt="BeautyPlus-Collage-2025-11-06T17_33_43" src="https://github.com/user-attachments/assets/61a2ae0c-2d8a-4ccb-9aee-2e1be10bdd14" />
 
 ## Usage
