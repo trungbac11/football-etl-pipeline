@@ -1,5 +1,3 @@
-# Football Match Finder
-
 ## SYSTEM ARCHITECTURE
 
 <img width="2000" height="965" alt="image" src="https://github.com/user-attachments/assets/a2c58a8c-c52d-40b6-840e-2acaad43e8a0" />
