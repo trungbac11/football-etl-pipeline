@@ -5,6 +5,7 @@
 <img width="1591" height="1006" alt="image" src="https://github.com/user-attachments/assets/89f424a6-c8d3-4d3e-979f-b1cdacda82b7" />
 
 ## Data Lineage
+![football-etl-pipeline - Frame 2](https://github.com/user-attachments/assets/417e1e6a-415d-4c1d-8c77-f3b2a2e6eab6)
 
 #### Bronze layer 
 <img width="1915" height="790" alt="image" src="https://github.com/user-attachments/assets/7edfe7a8-fb2b-4bc0-97cb-42647954fb79" />
