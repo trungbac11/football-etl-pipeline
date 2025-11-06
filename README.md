@@ -2,6 +2,10 @@
 
 <img width="2000" height="965" alt="image" src="https://github.com/user-attachments/assets/a2c58a8c-c52d-40b6-840e-2acaad43e8a0" />
 
+## Database Schema
+
+<img width="815" height="987" alt="football" src="https://github.com/user-attachments/assets/c3903e8d-43ff-4b9d-b999-94a13e944126" />
+
 ## Data Lineage
 
 #### Bronze layer 
