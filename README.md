@@ -50,13 +50,13 @@ Get clone repo: `get clone https://github.com/trungbac11/football-etl-pipeline.g
 `make psql_create`
 
 ### 5 Run ETL Pipeline with Dagster
-Dagster will be running on: `[http://localhost:8501](http://localhost:3001)`
+Dagster will be running on: `http://localhost:3001`
 
 ### 6 Run the Football Search Web Application
 
 **#start the Streamlit app**
 
-The web application will be available at:  `[http://localhost:8501](http://localhost:8501)`
+The web application will be available at:  `http://localhost:8501`
 
 `make run_app`
 
