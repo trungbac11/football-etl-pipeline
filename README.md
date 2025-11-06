@@ -25,6 +25,8 @@
 
 <img width="1263" height="906" alt="image" src="https://github.com/user-attachments/assets/b8e25026-4376-4d19-83e4-151cd9fca3fa" />
 
+<img width="1920" height="1920" alt="BeautyPlus-Collage-2025-11-06T17_33_43" src="https://github.com/user-attachments/assets/61a2ae0c-2d8a-4ccb-9aee-2e1be10bdd14" />
+
 ## Usage
 - Docker desktop
 - Dbeaver or any other DB client
