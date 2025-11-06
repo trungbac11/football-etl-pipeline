@@ -1,0 +1,12 @@
+dbt_transform:
+  outputs:
+    dev:
+      dbname: football
+      host: localhost
+      pass: admin123
+      port: 5432
+      schema: analysis
+      threads: 1
+      type: postgres
+      user: admin
+  target: dev
