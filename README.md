@@ -1,4 +1,4 @@
-![football-etl-pipeline - Frame 1 (1)](https://github.com/user-attachments/assets/291ffbe4-14de-4c0c-acf3-27afed65f71d)
+![football-etl-pipeline - Frame 1 (2)](https://github.com/user-attachments/assets/59377753-a3e2-4239-afa2-2141893d9708)
 
 ## Database Schema
 
