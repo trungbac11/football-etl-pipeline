@@ -4,7 +4,8 @@
 
 ## Database Schema
 
-<img width="815" height="987" alt="football" src="https://github.com/user-attachments/assets/c3903e8d-43ff-4b9d-b999-94a13e944126" />
+<img width="1591" height="1006" alt="image" src="https://github.com/user-attachments/assets/89f424a6-c8d3-4d3e-979f-b1cdacda82b7" />
+
 
 ## Data Lineage
 
