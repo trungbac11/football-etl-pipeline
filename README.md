@@ -17,9 +17,11 @@
 <img width="1914" height="789" alt="image" src="https://github.com/user-attachments/assets/1fe8a763-d679-431d-a5a6-772ce6571042" />
 
 ## Demo
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a3e8a0b4-16f4-4c28-a267-1a0e44324eb8" />
+<img width="1717" height="812" alt="image" src="https://github.com/user-attachments/assets/7493894b-7ff6-4b43-ba86-3308ceeb38a2" />
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d75c1cec-d4ad-43b2-92d2-b21b224caf0f" />
+<img width="1676" height="662" alt="image" src="https://github.com/user-attachments/assets/5243e8b5-f220-4342-8648-b13081bf8ff9" />
+
+<img width="1473" height="884" alt="image" src="https://github.com/user-attachments/assets/9ecfcea9-f760-4657-a352-4641d97bf6d1" />
 
 ## Usage
 - Docker desktop
